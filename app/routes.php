@@ -1,7 +1,8 @@
 <?php
-
 use NoahBuscher\Macaw\Macaw;
 
-Macaw::get('fuck', function() {
-    echo "成功！";
+Macaw::get('/', function() {
+    echo env("APP_NAME");
 });
+
+Macaw::dispatch();

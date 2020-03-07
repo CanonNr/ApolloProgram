@@ -1,6 +1,6 @@
 {
   "require": {
-    "illuminate/database": "*",
+    "illuminate/database": "^7.0",
     "noahbuscher/macaw": "dev-master",
     "canon-nr/framework": "dev-master",
     "symfony/var-dumper": "^5.0",
