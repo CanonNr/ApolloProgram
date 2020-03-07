@@ -8,9 +8,11 @@ require_once __DIR__.'/../vendor/autoload.php';
 (new Canon\Framework\Boot\Configuration())->load();
 
 // 配置容器
-
 $app = new \Canon\Framework\Application();
 
-dump($app);
-// 路由设置
-require '../app/routes.php';
+// 路由配置
+$router = $app->router->CreateRouter();
+
+require_once __DIR__.'/../app/routes.php';
+
+return $app;

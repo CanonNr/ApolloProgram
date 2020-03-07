@@ -1,8 +1,6 @@
 <?php
-use NoahBuscher\Macaw\Macaw;
+    $router::get('/',function (){
+        echo env("APP_NAME");
+    });
 
-Macaw::get('/', function() {
-    echo env("APP_NAME");
-});
-
-Macaw::dispatch();
+    $router::dispatch();
