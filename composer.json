@@ -1,0 +1,7 @@
+{
+  "require": {
+    "illuminate/database": "*",
+    "noahbuscher/macaw": "dev-master",
+    "canon-nr/framework": "dev-master"
+  }
+}
