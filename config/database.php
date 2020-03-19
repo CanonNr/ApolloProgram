@@ -1,7 +1,7 @@
 <?php
     return [
-
         'connections' =>[
+
             'mysql' => [
                 'driver' => 'mysql',
                 'host' => env('DB_HOST', '127.0.0.1'),
@@ -17,13 +17,16 @@
                 'engine' => env('DB_ENGINE', null),
                 'timezone' => env('DB_TIMEZONE', '+00:00'),
             ]
+
         ],
 
         'redis' =>[
+
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', 6379),
             'database' => env('REDIS_DB', 0),
+
         ]
 
     ];
