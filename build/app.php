@@ -14,6 +14,9 @@ $router = $app->router->CreateRouter();
 
 require_once __DIR__.'/../app/routes.php';
 
+// Rpc Service
+require_once __DIR__.'/../app/Rpc/rpc.php';
+
 // 返回容器
 return $app;
 
