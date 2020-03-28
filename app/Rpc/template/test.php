@@ -1,9 +1,9 @@
 <?php
 namespace App\Rpc\template;
 
-class get
+class test
 {
-    public function test()
+    public function get()
     {
         echo "hello AP";
     }

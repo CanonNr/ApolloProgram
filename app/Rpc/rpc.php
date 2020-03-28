@@ -8,7 +8,7 @@ class rpc extends Register
     public function setService()
     {
         return [
-            'get'   =>  'App\Rpc\template\get::class'
+            'test'   =>  'App\Rpc\template\test::class'
         ];
     }
 }
