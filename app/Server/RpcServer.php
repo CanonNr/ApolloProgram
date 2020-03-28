@@ -2,8 +2,6 @@
 
 namespace App\Server;
 
-use App\Model\Example;
-use mysql_xdevapi\Exception;
 use Swoole\Server as Server;
 use swoole_server;
 

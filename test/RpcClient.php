@@ -6,5 +6,5 @@ require_once '../vendor/autoload.php';
 
 
 $client = new Client(1,1);
-$client->class("asd")->test(1);
+$client->class("test")->get(1);
 //var_dump($client);
