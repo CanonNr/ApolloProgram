@@ -2,18 +2,24 @@
 
 namespace App\Server;
 
-use Swoole\Server as Server;
 use swoole_server;
+use Canon\Rpc\Server\Server;
 
 /**
  * @Server()
  */
-class RpcServer
+class RpcServer extends Server
 {
+    public $host;
+
+    public $port;
+
+    public $config;
+
     public function handle()
     {
 
-        $server = new Server("127.0.0.1", 9501);
+        $server = new \Swoole\Server($this->host, $this->port);
 
         $server->set([]);
 
@@ -34,17 +40,12 @@ class RpcServer
 
     }
 
-    public function receive(swoole_server $server, $fd, $reactor_id, $data)
-    {
-        var_dump($server->host);
-        var_dump($data);
-    }
-
     public function serverInfo(swoole_server $server)
     {
         echo("---------------- 服 务 已 启 动 ----------------" . PHP_EOL);
         echo("host: ".$server->host."" . PHP_EOL);
         echo("port: ".$server->port."" . PHP_EOL);
+        echo("---------------- 服 务 已 启 动 ----------------" . PHP_EOL);
 
     }
 }
